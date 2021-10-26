@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title th:text="${title}"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<header th:insert = "blocks/header :: header"></header>
+
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+	<h1 class="display-4 fw-bold">Новости</h1>
+	<div class="col-lg-6 mx-auto">
+		<p class="lead mb-4">Предложение о переносе сроков переписи на октябрь, поддержанное Президентом России
+			Владимиром Путиным, позволяет
+			оптимальным образом организовать работу по организации и проведению переписи во всех
+			регионах страны.</p>
+		<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+			<button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Читать далее</button>
+			<button type="button" class="btn btn-outline-secondary btn-lg px-4">Дополнительные сведения</button>
+		</div>
+	</div>
+	<div class="overflow-hidden" >
+		<div class="container px-5" style="max-height: 50vh;">
+			<img src="https://kislovodsk-kurort.org/uploads/21092018/file_4.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" weight="100" loading="lazy">
+		</div>
+	</div>
+</div>
+<div class="album py-5 bg-light">
+	<div class="container">
+		<h1 class="display-4 fw-bold">Истории людей</h1>
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+			<div class="col">
+				<div class="card shadow-sm">
+					<img src="https://tlgrm.ru/_/stickers/aa6/f30/aa6f30db-6c14-4875-930b-2a64501f85bf/6.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+					<div class="card-body">
+						<p class="card-text">Иванов Петр: Как помочь государству?</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="btn btn-sm btn-outline-secondary">Читать</button>
+							</div>
+							<small class="text-muted">3 mins</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card shadow-sm">
+					<img src="http://vkclub.su/_data/stickers/cosmogirl/sticker_vk_cosmogirl_000.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+					<div class="card-body">
+						<p class="card-text">Смирнова Анастасия: Мой опыт участия в переписи</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="btn btn-sm btn-outline-secondary">Читать</button>
+							</div>
+							<small class="text-muted">5 mins</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card shadow-sm">
+					<img src="https://stickergrad.ru/wp-content/uploads/2019/07/9520.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+					<div class="card-body">
+						<p class="card-text">Косицын Клим: Зачем это нужно?</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="btn btn-sm btn-outline-secondary">Читать</button>
+							</div>
+							<small class="text-muted">1 mins</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+<div class="container col-xxl-8 px-4 py-5">
+	<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+		<div class="col-10 col-sm-8 col-lg-6">
+			<img src="https://www.ppn2018.ru/upload/iblock/2ca/2.PNG" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+		</div>
+		<div class="col-lg-6">
+			<h1 class="display-5 fw-bold lh-1 mb-3">Как узнать переписчика?</h1>
+			<p class="lead">Узнать своего переписчика можно по номеру телефона вашего переписного участка или позвонив на горячую линию: +7 800 707-20-20. </p>
+			<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+				<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Подробности</button>
+				<button type="button" class="btn btn-outline-secondary btn-lg px-4">Дополнительная информация</button>
+			</div>
+		</div>
+	</div>
+</div>
+<footer th:insert = "blocks/footer :: footer"></footer>
+</body>
+
+</html>
